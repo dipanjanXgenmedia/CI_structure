@@ -1,5 +1,5 @@
-<?php $this->load->view("admin/components/header"); ?>
+<?php $this->load->view("components/header"); ?>
 	
 	<?php $this->load->view($subview); ?>
 
-<?php $this->load->view("admin/components/footer"); ?>
+<?php $this->load->view("components/footer"); ?>
