@@ -5,6 +5,7 @@
     </div>
     <div class="modal-body">
           <div class="container">
+              <?php echo validation_errors(); ?>
               <form action="" method="POST">
                 <div class="form-group row">
                   <label for="email" class="col-sm-2 col-form-label">Email</label>

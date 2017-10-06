@@ -8,7 +8,7 @@ class MY_Controller extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('form_validation');
-		$this->load->helper('url');
+		$this->load->helper('url','form');
 		$this->load->model("admin_model");
 		$this->data['site_name'] ="BlueMason";
 		$this->data['site_title'] ="BlueMason | Admin";
@@ -22,7 +22,7 @@ class MY_Controller extends CI_Controller {
 					 	    'admin',
 					 		'admin/login',
 					 		'admin/login/logout',
-					 		);
+					 );
 				 // if uri is not present in this array
 					 if(in_array(uri_string(),$exception_uri) == FALSE) {
 					 	     // if user is not loged in
